@@ -89,7 +89,7 @@ export default class SliderOne extends Component {
 
           <div>
             <div className={styles.card}>
-              <img src="images/c.jpg" alt="" />
+              <img src="images/c.png" alt="" />
             </div>
             {/* <h1 id={styles.title} >نمونه کشوری سال 1399</h1> */}
           </div>
