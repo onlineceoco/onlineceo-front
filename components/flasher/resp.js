@@ -8,7 +8,7 @@ function Resp() {
         <div className={styles["overlap-group"]}>
           <img
             className={styles["double-pic"]}
-            src="images/MLP/doublePic.png"
+            src="images/MLP/doublepic.png"
           />
           <img
             className={styles["laptop-circle"]}
