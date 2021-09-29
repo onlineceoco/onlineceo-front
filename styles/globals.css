@@ -1,0 +1,35 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: iransans;
+}
+:root {
+  --sidebar-bg: #232f3e;
+  --sidebar-bg-sub-menu: rgba(35, 47, 62, 0.9);
+  --sidebar-logo-hover: rgba(35, 47, 62, 0.9);
+  --glass: rgba(35, 47, 62, 0.7);
+  --white: #fff;
+}
+body::-webkit-scrollbar {
+  width: 2px;
+
+}
+
+body::-webkit-scrollbar-track {
+  background: red;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  font-family: iransans;
+  box-sizing: border-box;
+}
