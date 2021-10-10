@@ -1,0 +1,333 @@
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+.main {
+  min-width: 320px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 25%; */
+  height: 100vh;
+}
+.main > h1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #b30000;
+  text-shadow: rgba(0, 0, 0, 0.719) 10px 2px 10px;
+  font-size: 100px;
+}
+.main > button{
+  transition: all ease-in-out .5s;
+  border-radius: 5px;
+  height: 50px;
+  font-weight: 800;
+  cursor: pointer;
+  color: white;
+  background-color: #b30000;
+  margin: auto;
+  width: 40%;
+  border: 0;
+  outline: none;
+
+}
+.main > button:hover{
+  
+}
+.building800 {
+  min-width: 320px;
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 700px;
+  padding: 0 196.6px;
+  width: 1000px;
+}
+@keyframes mainAnima {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.overlap-group {
+ 
+  height: 641px;
+  margin-top: 29.93px;
+  position: relative;
+  width: 607px;
+}
+
+.nine {
+  animation: mainAnima 2s ease-in-out ;
+  height: 31px;
+  left: 0;
+  position: absolute;
+  top: 546px;
+  width: 572px;
+}
+
+.eight {
+  animation: animaReverce 5s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+  height: 163px;
+  left: 5px;
+  position: absolute;
+  top: 76px;
+  width: 163px;
+}
+
+.seven {
+  animation: animaReverce 5s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+  height: 165px;
+  left: 327px;
+  position: absolute;
+  top: 0;
+  width: 166px;
+}
+
+.six {
+  background-origin: center center;
+  height: 234px;
+  left: 153px;
+  position: absolute;
+  top: 91px;
+  width: 234px;
+
+  animation: anima 5s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+}
+
+@keyframes anima {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes animaReverce {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+.five {
+  animation: mainAnima 2s ease-in-out 0.5s;
+  height: 430px;
+  left: 34px;
+  position: absolute;
+  top: 136px;
+  width: 573px;
+}
+
+.four {
+  height: 311px;
+  left: 299px;
+  position: absolute;
+  top: 323px;
+  width: 190px;
+}
+
+.three {
+  height: 297px;
+  left: 132px;
+  position: absolute;
+  top: 338px;
+  width: 157px;
+}
+
+.two {
+  height: 28px;
+  left: 98px;
+  position: absolute;
+  top: 613px;
+  width: 426px;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 1017px) {
+  .main{
+    margin-top: 100px;
+  }
+  .main > h1 {
+    font-size: 80px;
+  }
+  .building800 {
+    height: 398px;
+    padding: 0 111.6px;
+    width: 555px;
+  }
+
+  .overlap-group {
+    height: 349px;
+    margin-top: 24.89px;
+
+    width: 331px;
+  }
+
+  .nine {
+    height: 18px;
+    left: 0;
+
+    top: 297px;
+    width: 312px;
+  }
+
+  .eight {
+    height: 90px;
+    left: 3px;
+    top: 41px;
+    width: 90px;
+  }
+
+  .seven {
+    height: 90px;
+    left: 178px;
+    top: 0;
+    width: 90px;
+  }
+
+  .six {
+    height: 128px;
+    left: 83px;
+    top: 49px;
+    width: 128px;
+  }
+
+  .five {
+    height: 234px;
+    left: 19px;
+    top: 74px;
+    width: 312px;
+  }
+
+  .four {
+    height: 170px;
+    left: 163px;
+    top: 176px;
+    width: 104px;
+  }
+
+  .three {
+    height: 162px;
+    left: 72px;
+    top: 184px;
+    width: 85px;
+  }
+
+  .two {
+    height: 15px;
+    left: 53px;
+    top: 334px;
+    width: 233px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main > h1 {
+    font-size: 40px;
+    text-shadow: rgba(0, 0, 0, 0.719) 5px 2px 10px;
+  }
+  .building800 {
+    height: 230px;
+    padding: 0 59.9px;
+    width: 318px;
+  }
+
+  .overlap-group {
+    height: 210px;
+    margin-top: 9.93px;
+
+    width: 198px;
+  }
+
+  .nine {
+    height: 11px;
+    left: 0;
+
+    top: 178px;
+    width: 187px;
+  }
+
+  .eight {
+    height: 55px;
+    left: 1px;
+
+    top: 24px;
+    width: 54px;
+  }
+
+  .seven {
+    height: 54px;
+    left: 106px;
+
+    top: 0;
+    width: 55px;
+  }
+
+  .six {
+    height: 78px;
+    left: 50px;
+
+    top: 29px;
+    width: 77px;
+  }
+
+  .five {
+    height: 141px;
+    left: 11px;
+
+    top: 44px;
+    width: 187px;
+  }
+
+  .four {
+    height: 103px;
+    left: 97px;
+
+    top: 105px;
+    width: 63px;
+  }
+
+  .three {
+    height: 98px;
+    left: 43px;
+
+    top: 110px;
+    width: 52px;
+  }
+
+  .two {
+    height: 10px;
+    left: 32px;
+    top: 200px;
+    width: 140px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main > h1 {
+    font-size: 30px;
+  }
+}
